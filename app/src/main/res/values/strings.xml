@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ezwayapp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello_login_ezway_fragment">Área do usuário</string>
+    <string name="welcome_ezway">Olá usuário</string>
+    <string name="title_activity_login">login</string>
+    <string name="btn_login">Fazer login</string>
+    <string name="btn_maps">Acessar maps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
