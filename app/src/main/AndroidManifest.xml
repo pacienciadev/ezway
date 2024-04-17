@@ -14,6 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ezwayapp"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.login.SignInWithEmailAndPasswordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_in_with_email_and_password" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -23,11 +27,9 @@
             android:name=".MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

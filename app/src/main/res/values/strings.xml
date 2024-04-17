@@ -9,4 +9,20 @@
     <string name="btn_login">Fazer login</string>
     <string name="btn_maps">Acessar maps</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_sign_in_with_email_and_password">
+        SignInWithEmailAndPasswordActivity
+    </string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_up">Registrar</string>
+    <string name="action_sign_in_google">Acessar com Google</string>
+    <string name="call_register">Não possuí conta? Clique aqui!</string>
+    <string name="call_forgot_password">Esqueceu a senha?</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="ezWay_logo">Logo EzWay</string>
+    <string name="logo_description">Logo ezway</string>
 </resources>

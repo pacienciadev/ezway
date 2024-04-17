@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450409957474",
+    "project_id": "ezway-fb",
+    "storage_bucket": "ezway-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450409957474:android:cfbb9785f2ca281a83a93b",
+        "android_client_info": {
+          "package_name": "br.com.ezway.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYw8gSXh8b-enGQxKgY7_R_YzO_4Shug4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

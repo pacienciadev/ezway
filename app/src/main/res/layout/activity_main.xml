@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
@@ -9,7 +10,13 @@
     android:paddingHorizontal="22dp"
     >
 
-
+    <ImageView
+        android:id="@+id/ezway_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:srcCompat="@drawable/logo_ezway_horizontal"
+        android:contentDescription="@string/logo_description" />
 
     <TextView
         android:layout_width="match_parent"
@@ -21,16 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_login"
-        android:onClick="loginAccess" />
+        android:onClick="signInAccess" />
 
-
-
-    <Button
-        android:id="@+id/btn_maps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_maps"
-        android:onClick="mapAccess" />
+<!--    <Button-->
+<!--        android:id="@+id/btn_maps"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/btn_maps"-->
+<!--        android:onClick="mapAccess" />-->
 
 <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
 <!--        android:id="@+id/nav_view"-->

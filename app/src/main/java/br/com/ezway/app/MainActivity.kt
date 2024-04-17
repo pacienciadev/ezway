@@ -10,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import br.com.ezway.app.databinding.ActivityMainBinding
+import br.com.ezway.app.ui.login.SignInWithEmailAndPasswordActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun loginAccess(view: View) {
-        val intent = Intent(this, LoginActivity::class.java)
+    fun signInAccess(view: View) {
+        val intent = Intent(this, SignInWithEmailAndPasswordActivity::class.java)
         startActivity(intent)
     }
 
