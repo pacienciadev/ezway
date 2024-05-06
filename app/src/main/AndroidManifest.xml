@@ -15,30 +15,31 @@
         android:theme="@style/Theme.Ezwayapp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.login.SignInWithEmailAndPasswordActivity"
-            android:exported="false"
-            android:label="@string/title_activity_sign_in_with_email_and_password" />
+            android:name=".RegisterActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
 
         <activity
-            android:name=".MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps" />
-        <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Ezwayapp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
     </application>
 
 </manifest>
