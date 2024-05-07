@@ -66,7 +66,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/newAccount"
+            android:id="@+id/new_account_btn"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputPassword" />
 
         <Button
-            android:id="@+id/forgotPassword"
+            android:id="@+id/forgot_password_btn"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputPassword" />
 
         <Button
-            android:id="@+id/btnSignIn"
+            android:id="@+id/btn_sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -95,23 +95,23 @@
             android:text="@string/action_sign_in"
             app:icon="@drawable/log_in"
             app:iconGravity="textEnd"
-            app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_password_btn"
             app:layout_editor_absoluteX="36dp" />
 
         <TextView
-            android:id="@+id/orText"
+            android:id="@+id/geo_permition_warning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="22dp"
-            android:text="@string/orText"
+            android:text="@string/or_text"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
         <Button
-            android:id="@+id/btnSignInGoogle"
+            android:id="@+id/btn_sign_in_google"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="22dp"
@@ -119,17 +119,17 @@
             android:text="@string/action_sign_in_google"
             app:icon="@drawable/google"
             app:iconGravity="textEnd"
-            app:layout_constraintTop_toBottomOf="@+id/orText" />
+            app:layout_constraintTop_toBottomOf="@+id/geo_permition_warning" />
 
         <Button
-            android:id="@+id/btnSignInFacebook"
+            android:id="@+id/btn_sign_in_facebook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="22dp"
             android:backgroundTint="@color/facebook_blue"
-            android:text="@string/action_sign_in_google"
+            android:text="@string/action_sign_in_facebook"
             app:icon="@drawable/facebook"
             app:iconGravity="textEnd"
-            app:layout_constraintTop_toBottomOf="@+id/btnSignInGoogle" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_sign_in_google" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

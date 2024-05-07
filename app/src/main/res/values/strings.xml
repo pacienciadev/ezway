@@ -5,7 +5,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="hello_login_ezway_fragment">Área do usuário</string>
     <string name="welcome_ezway">Olá usuário</string>
-    <string name="orText">Ou</string>
+    <string name="or_text">Ou</string>
+    <string name="geo_permition">Precisamos solicitar o acesso à sua Geolocalização, para que você possa estar utilizando nossos recursos.</string>
     <string name="btn_login">Fazer login</string>
     <string name="btn_maps">Acessar maps</string>
     <string name="title_activity_maps">MapsActivity</string>
@@ -19,13 +20,18 @@
     <string name="action_new_account">Criar nova conta</string>
     <string name="action_sign_up">Registrar</string>
     <string name="action_sign_in_google">Acessar com Google</string>
+    <string name="action_sign_in_facebook">Acessar com Facebook</string>
     <string name="call_register">Criar nova conta</string>
     <string name="call_forgot_password">Esqueceu a senha?</string>
     <string name="turn_back">Voltar</string>
     <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_password">Password must be > 5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="ezWay_logo">Logo EzWay</string>
     <string name="logo_description">Logo ezway</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="forgot_password_title">Insira seu e-mail no campo abaixo para iniciar o processo de recuperação de senha</string>
+    <string name="request_password_recovery">Solicitar recuperação de senha</string>
+    <string name="create_new_account_title">Criar nova conta</string>
+    <string name="a_woman_consunting_a_map">Ilustração de uma mulher consultando um mapa</string>
 </resources>

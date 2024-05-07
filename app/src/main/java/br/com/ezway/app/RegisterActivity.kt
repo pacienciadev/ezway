@@ -1,15 +1,28 @@
 package br.com.ezway.app
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class RegisterActivity : AppCompatActivity() {
+    private val createNewAccountBtn: Button by lazy { findViewById(R.id.create_new_account) }
+    private val backBtn: Button by lazy { findViewById(R.id.turn_back_btn) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_register)
+
+        createNewAccountBtn.setOnClickListener {
+            Toast.makeText(
+                this,
+                "Criação de conta encontra-se em desenvolvimento",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+        backBtn.setOnClickListener {
+            finish()
+        }
     }
 }
