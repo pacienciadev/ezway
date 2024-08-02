@@ -4,28 +4,42 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
-    private val nextBtn: Button by lazy { findViewById<Button>(R.id.next_btn) }
-    private val backBtn: Button by lazy { findViewById<Button>(R.id.turn_back_btn) }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+  private val nextBtn: Button by lazy { findViewById<Button>(R.id.next_btn) }
 
-        backBtn.setOnClickListener {
-            finish()
-        }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
 
-        nextBtn.setOnClickListener {
-            dashboardAccess()
-        }
+    val firebaseAuth = Firebase.auth
 
+//    checkUserState(firebaseAuth)
+
+    nextBtn.setOnClickListener {
+      loginAccess()
     }
+  }
 
-    private fun dashboardAccess() {
-        val dashboardIntent = Intent(this, DashboardActivity::class.java)
-        startActivity(dashboardIntent)
+  private fun checkUserState(firebaseAuth: FirebaseAuth) {
+    val currentUser = firebaseAuth.currentUser
+
+    if (currentUser != null) {
+      return dashboardAccess()
     }
+  }
 
+  private fun loginAccess() {
+    val loginIntent = Intent(this, LoginActivity::class.java)
+    startActivity(loginIntent)
+  }
+
+  private fun dashboardAccess() {
+    val dashboardIntent = Intent(this, DashboardActivity::class.java)
+    startActivity(dashboardIntent)
+  }
 }
 
